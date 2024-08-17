@@ -4,6 +4,7 @@ from PIL import Image
 import PyPDF2
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
+from gtts import gTTS
 
 
 st.title('Interfaz auditiva 👂')
