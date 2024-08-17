@@ -19,7 +19,7 @@ with st.sidebar:
    st.subheader("Este Agente, te ayudará a realizar algo de análisis sobre el PDF cargado")
 with open('ani_audio.json') as source:
          animation=json.load(source)
-
+st.lottie(animation,width =350)
 #pdfReader = PyPDF2.PdfReader(pdfFileObj)
 pdf = st.file_uploader("Carga el archivo PDF", type="pdf")
 
