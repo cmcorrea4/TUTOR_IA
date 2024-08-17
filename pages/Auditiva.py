@@ -8,6 +8,8 @@ from gtts import gTTS
 import base64
 import glob
 import time
+from streamlit_lottie import st_lottie
+import json
 
 
 st.title('Interfaz auditiva 👂')
@@ -15,7 +17,8 @@ st.title('Interfaz auditiva 👂')
 #st.image(image, width=350)
 with st.sidebar:
    st.subheader("Este Agente, te ayudará a realizar algo de análisis sobre el PDF cargado")
-
+with open('ani_audio.json') as source:
+         animation=json.load(source)
 
 #pdfReader = PyPDF2.PdfReader(pdfFileObj)
 pdf = st.file_uploader("Carga el archivo PDF", type="pdf")
