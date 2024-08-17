@@ -34,6 +34,11 @@ if option_lang=="Español" :
 if option_lang=="English" :
     lg='en'
 
+try:
+    os.mkdir("temp")
+except:
+    pass
+
 def text_to_speech(text, tld,lg):
     
     tts = gTTS(text,lang=lg) # tts = gTTS(text,'en', tld, slow=False)
