@@ -7,6 +7,7 @@ from langchain.text_splitter import CharacterTextSplitter
 from gtts import gTTS
 import base64
 import glob
+import time
 
 
 st.title('Interfaz auditiva 👂')
