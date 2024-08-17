@@ -5,6 +5,7 @@ import PyPDF2
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from gtts import gTTS
+import base64
 
 
 st.title('Interfaz auditiva 👂')
