@@ -13,7 +13,7 @@ with st.sidebar:
    st.subheader("Este Agente, te ayudará a realizar algo de análisis sobre el PDF cargado")
 
 
-pdfReader = PyPDF2.PdfReader(pdfFileObj)
+#pdfReader = PyPDF2.PdfReader(pdfFileObj)
 pdf = st.file_uploader("Carga el archivo PDF", type="pdf")
 
    # extract the text
